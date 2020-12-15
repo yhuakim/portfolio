@@ -1,0 +1,205 @@
+@media only screen and (min-width: 600px) {
+
+    main {
+        .featured {
+            div {
+                .image-container-bg {
+                    width: 350px;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .skills {
+
+            .card-container {
+                margin-top: 2em;
+            }
+
+            .card {
+                width: 200px;
+                height: 280px;
+            }
+        }
+
+        .portfolio {
+        
+            &-content {
+        
+                .project {
+            
+                    
+        
+                    &-image1 {
+                        width: 350px;
+                    }
+            
+                    &-image2 {
+                        width: 350px;
+                    }
+        
+                    &-image3 {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        height: 15vh;
+
+        nav {
+            max-width: 700px;
+            right: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+    
+            .brand-name {
+                padding: 0;
+            }
+        }
+        
+    }
+    
+    .featured>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .featured-text {
+            padding: 3em 0;
+            align-self: center;
+        }
+
+        .image-container-bg {
+            width: 300px;
+            top: -2em;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+
+        .left, .right {
+            display: none;
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+
+            .web, .graphics, .writing {
+               margin: 0 1em;
+            }
+        }
+
+        .card {
+            width: 140px;
+            top: 1em;
+        }
+    }
+
+    .portfolio {
+        &-content {
+            
+    
+            .project-2, .project-1, .project-3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1em;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+        height: 15vh;
+
+        nav {
+            max-width: 700px;
+            right: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+    
+            .brand-name {
+                padding: 0;
+            }
+        }
+        
+    }
+    
+    .featured {
+        width: 100%;
+        display: grid;
+
+        &::before, &::after {
+            width: 300px;
+            height: 400px;
+            left: 2em;
+        }
+
+        div {
+            .image-container-bg {
+                width: 400px;
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+
+        .left, .right {
+            display: none;
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+
+            .web, .graphics, .writing {
+               margin: 0 1em;
+            }
+        }
+
+        .card {
+            width: 140px;
+            top: 1em;
+        }
+    }
+
+    .portfolio {
+        &-content {
+            
+    
+            .project-2, .project-1, .project-3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1em;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+    }
+}

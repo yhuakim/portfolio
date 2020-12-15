@@ -1,0 +1,687 @@
+@import url("http://fonts.googleapis.com/earlyaccess/khyay.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
+@media only screen and (min-width: 600px) {
+  main .featured div .image-container-bg {
+    width: 350px;
+  }
+  main .featured div .image-container-bg img {
+    width: 100%;
+  }
+  main .skills .card-container {
+    margin-top: 2em;
+  }
+  main .skills .card {
+    width: 200px;
+    height: 280px;
+  }
+  main .portfolio-content .project-image1 {
+    width: 350px;
+  }
+  main .portfolio-content .project-image2 {
+    width: 350px;
+  }
+  main .portfolio-content .project-image3 {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 15vh;
+  }
+  header nav {
+    max-width: 700px;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  header nav .brand-name {
+    padding: 0;
+  }
+  .featured > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .featured > div .featured-text {
+    padding: 3em 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .featured > div .image-container-bg {
+    width: 300px;
+    top: -2em;
+  }
+  .featured > div .image-container-bg img {
+    width: 100%;
+  }
+  .portfolio-content .project-2, .portfolio-content .project-1, .portfolio-content .project-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header nav {
+    max-width: 700px;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  header nav .brand-name {
+    padding: 0;
+  }
+  .featured {
+    width: 100%;
+  }
+  .featured::before, .featured::after {
+    width: 300px;
+    height: 400px;
+    left: 2em;
+  }
+  .featured div .image-container-bg {
+    width: 400px;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills .left, .skills .right {
+    display: none;
+  }
+  .skills .card-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skills .card-container .web, .skills .card-container .graphics, .skills .card-container .writing {
+    margin: 0 1em;
+  }
+  .skills .card {
+    width: 140px;
+    top: 1em;
+  }
+  .portfolio-content .project-2, .portfolio-content .project-1, .portfolio-content .project-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #3E3636;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Myanmar text', 'Monteserrat', 'Khyay', 'san-serif';
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+code {
+  background-color: #f2f2f2;
+  padding: 0 .2em;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  background-color: #f2f2f2;
+  z-index: 20;
+  height: 7vh;
+}
+
+header nav {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 1em;
+}
+
+header nav .brand-name {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+header nav .brand-name #Layer_2 {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header nav .nav {
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+header nav .nav li {
+  padding: .8em;
+  font-size: .8em;
+}
+
+header nav .hire {
+  position: relative;
+  width: 3em;
+  border-radius: 5px;
+  background-color: #FEA54C;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header nav .hire b {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: .7em;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* top: 7vh; */
+  z-index: 0;
+}
+
+main #home {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #home .home-content {
+  padding: 0 2em;
+}
+
+main #home .home-content .greeting {
+  margin-bottom: 1em;
+}
+
+main #home .home-content .greeting .name {
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+main #home .home-content .greeting .greet {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  line-height: 1.3em;
+}
+
+main #home .home-content .intro {
+  margin-bottom: 1em;
+}
+
+main #home .home-content .intro-text {
+  font-size: smaller;
+}
+
+main #home .home-content .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #home .home-content .cta .project-btn, main #home .home-content .cta .skills-btn {
+  padding: 0 1em;
+  border-radius: 5px;
+}
+
+main #home .home-content .cta .project-btn {
+  background-color: #FEA54C;
+  display: block;
+  padding-top: .2em;
+}
+
+main #home .home-content .cta .project-btn a {
+  color: #ffffff;
+}
+
+main #home .home-content .cta .skills-btn {
+  /* background-color: $primary-color; */
+  display: block;
+  padding-top: .2em;
+  opacity: .5;
+  -webkit-clip-path: circle(62% at 40% 20%);
+          clip-path: circle(62% at 40% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+main #home .home-content .cta .skills-btn a {
+  color: #beb5b5;
+}
+
+main #home .home-content .cta .skills-btn:hover {
+  background-color: #ffa248;
+  border: none;
+  opacity: .98;
+  -webkit-clip-path: circle(95% at 35% 15%);
+          clip-path: circle(95% at 35% 15%);
+}
+
+main #home .home-content .cta .skills-btn:hover a {
+  color: #ffffff;
+}
+
+main .featured {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  background-color: #ffffff;
+  padding-top: 1em;
+  position: relative;
+}
+
+main .featured::before, main .featured::after {
+  content: '';
+  background-image: url("../assets/images/Polygon 6.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: -4em;
+  z-index: 0;
+}
+
+main .featured div > p:first-child {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .7em;
+}
+
+main .featured-title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+main .featured-desc {
+  font-size: .8em;
+  line-height: 1.7;
+}
+
+main .featured div {
+  padding: 0 2em;
+  position: relative;
+  z-index: 1;
+}
+
+main .featured div .image-container-bg {
+  width: 250px;
+  height: 100px;
+  padding: 0;
+}
+
+main .featured div .image-container-bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 4px 5px #3e363625;
+          box-shadow: 0px 4px 5px #3e363625;
+}
+
+.skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  background-color: #FEB062;
+  padding-top: 5em;
+  position: relative;
+  z-index: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.skills .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .left:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.skills .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .right:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.skills .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: -2em;
+}
+
+.skills .card-container .web, .skills .card-container .graphics, .skills .card-container .writing {
+  position: relative;
+  opacity: 1;
+}
+
+.skills .card-container .web-title, .skills .card-container .graphics-title, .skills .card-container .writing-title {
+  text-transform: uppercase;
+  font-size: .8em;
+  line-height: 2;
+}
+
+.skills .card-container .web-desc, .skills .card-container .graphics-desc, .skills .card-container .writing-desc {
+  position: relative;
+  line-height: 2;
+  font-size: small;
+}
+
+.skills .card {
+  width: 160px;
+  height: auto;
+  background-color: #fff;
+  padding: 2em;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #eaceb1;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  z-index: -1;
+}
+
+.portfolio-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 2em 0 2em;
+}
+
+.portfolio-content .project {
+  padding: 2em 0;
+}
+
+.portfolio-content .project-category {
+  text-transform: uppercase;
+  font-size: .6em;
+  font-weight: 700;
+}
+
+.portfolio-content .project-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  line-height: 1;
+}
+
+.portfolio-content .project-desc {
+  position: relative;
+  font-size: small;
+}
+
+.portfolio-content .project-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.portfolio-content .project-tools .icons {
+  padding: 0 10px 10px 10px;
+}
+
+.portfolio-content .project-image1 {
+  width: 250px;
+}
+
+.portfolio-content .project-image1 img {
+  width: 100%;
+}
+
+.portfolio-content .project-image2 {
+  width: 250px;
+}
+
+.portfolio-content .project-image2 img {
+  width: 100%;
+}
+
+.portfolio-content .project-image3 {
+  width: 250px;
+}
+
+.portfolio-content .project-image3 img {
+  width: 100%;
+}
+
+.portfolio-content .more-btn {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #FEB062;
+  padding: .3em .5em 0 .5em;
+  border-radius: 5px;
+  bottom: -.8em;
+}
+
+.portfolio-content .more-btn .more-btn-link {
+  color: #f2f2f2;
+}
+
+.footer {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.footer .question {
+  padding: 2em 4em;
+  text-align: center;
+  position: relative;
+}
+
+.footer .question > span {
+  font-size: 5em;
+  font-weight: 700;
+  position: absolute;
+  top: -.1em;
+  opacity: .1;
+}
+
+.footer .question > p {
+  font-size: large;
+  font-weight: 600;
+  opacity: .7;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #3E3636;
+  padding: .9em 0 0 0;
+}
+
+.footer-content .contact {
+  display: none;
+}
+
+.footer-content .message {
+  width: 40%;
+  text-align: center;
+  color: #FEB062;
+  background-color: #f2f2f2;
+  padding: .2em .2em 0 .2em;
+  border-radius: 5px;
+  margin-bottom: .095em;
+}
+
+.footer-content .socials a > img {
+  width: 30px;
+  padding: 10px;
+}
+
+.footer-content .copyright {
+  color: #FFE7CF;
+  line-height: 1.8;
+}
+
+.footer-content .copyright p {
+  color: #FFE7CF;
+}
+/*# sourceMappingURL=main.css.map */
