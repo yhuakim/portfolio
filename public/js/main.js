@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const closeBtn = document.querySelector('.close')
     const submitBtn = document.querySelector('.submit-btn')
     const openBtn = document.querySelector('.message-btn')
-    const inputName = document.querySelector("input.name")
-    const inputEmail = document.querySelector("input.email")
-    const inputMessage = document.querySelector("input.message")
+
+    const navItems = document.querySelectorAll(".navlink")
     
     let current = 0
     let isOpen = false
@@ -30,23 +29,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
             return isOpen = !isOpen 
         }
     }
-
-    /* const clearForm = () => {
-        if(isOpen === true) {
-            form.style.display = "none"
-
-            modal.innerHTML += `
-            <div>
-                <h1>
-                    Thanks For Reaching Me
-                </h1>
-            </div>
-            
-            `
-
-            console.log(modal.innerHTML)
-        }
-    } */
     
     openBtn.addEventListener('click', openModal)
     closeBtn.addEventListener('click', closeModal)
@@ -109,5 +91,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
     let x = window.matchMedia("(max-width: 959px)")
     carousel(x)
     x.addEventListener('change',carousel)
+
+    const activeLink = () => {
+        navItems.forEach((item)=> {
+            const addStyle = () => {
+                item.classList.add("active")
+            }
+
+            item.hash === window.location.hash? 
+             addStyle()
+            :
+            "";
+        })
+    }
+    activeLink()
 })
+
 

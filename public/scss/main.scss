@@ -44,6 +44,13 @@ code {
     padding: 0 .2em;
 }
 
+.active {
+    padding: .3em .2em 0 .2em;
+    border-left: 2px solid $primary-color;
+    font-weight: 700;
+    transition: padding .5s ease-in-out;
+}
+
 header {
     width: 100%;
     position: relative;
