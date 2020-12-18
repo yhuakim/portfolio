@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const closeBtn = document.querySelector('.close')
     const submitBtn = document.querySelector('.submit-btn')
     const openBtn = document.querySelector('.message-btn')
+    const inputName = document.querySelector("input.name")
+    const inputEmail = document.querySelector("input.email")
+    const inputMessage = document.querySelector("input.message")
     
     let current = 0
     let isOpen = false
@@ -27,6 +30,23 @@ document.addEventListener('DOMContentLoaded', ()=> {
             return isOpen = !isOpen 
         }
     }
+
+    /* const clearForm = () => {
+        if(isOpen === true) {
+            form.style.display = "none"
+
+            modal.innerHTML += `
+            <div>
+                <h1>
+                    Thanks For Reaching Me
+                </h1>
+            </div>
+            
+            `
+
+            console.log(modal.innerHTML)
+        }
+    } */
     
     openBtn.addEventListener('click', openModal)
     closeBtn.addEventListener('click', closeModal)
@@ -34,8 +54,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     const submitForm = (e) => {
         e.preventDefault()
+        closeModal()
     }
-    submitBtn.addEventListener('click', submitForm)
+    submitBtn.addEventListener('submit', submitForm)
 
 
     const carousel = (x) => {

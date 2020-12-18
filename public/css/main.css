@@ -207,7 +207,8 @@
       color: #3e3633;
       border: none;
       background-color: #FFD6AE;
-      font-weight: 600; }
+      font-weight: 600;
+      outline: 2px solid #FFD6AE; }
       #contact .modal .form .submit-btn:hover {
         cursor: pointer;
         color: #FFD6AE;
